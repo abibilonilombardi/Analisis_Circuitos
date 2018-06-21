@@ -35,6 +35,5 @@ def calcular_parametros_pasabanda():
 
 					if valor >= 0.95 and 10*(Q/wo) < 5*(10**(-3)) :
 						print frecuencia, int(frecuencia_wo), wo, Q, Ho, valor
-						break
 
 calcular_parametros_pasabanda() 
