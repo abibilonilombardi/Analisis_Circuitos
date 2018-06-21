@@ -1,14 +1,13 @@
 import numpy as np 
 
-
-def frange(start, stop, step):
-     i = start
-     while i < stop:
+def frange(inicio, fin, paso):
+     i = inicio
+     while i < fin:
          yield i
-         i += step
+         i += paso
 
 def pasabanda(s, Ho, wo, Q):
-	""" Retorna un vector con [pasbajo, pasabanda, pasaalto]"""
+	""" Retorna el valor absoluto de laa transferencia del filtro pasabanda"""
 	a = (s/wo)**2
 	b = s/(wo*Q)
 	c = 1
